@@ -20,8 +20,8 @@ git push -u origin main
 ```
 
 > 文档里（`package.json` 的 `repository` / `homepage`、`README.md`、`USAGE.md`）已经把仓库地址写成
-> `https://github.com/raosiyu/dsh-whale-middleman`。**如果 `<你的账号>` 不是 `raosiyu`**，推送前先把这四处的
-> `raosiyu` 一起替换掉，否则 GitHub 上的链接和安装命令都会指向别人的仓库。
+> `https://github.com/silverglowGalike/dsh-whale-middleman`。**如果 `<你的账号>` 不是 `silverglowGalike`**，推送前先把这四处的
+> `silverglowGalike` 一起替换掉，否则 GitHub 上的链接和安装命令都会指向别人的仓库。
 
 ## 3. 可选：发布到 npm
 

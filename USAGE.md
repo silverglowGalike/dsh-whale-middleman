@@ -45,7 +45,7 @@ DeepSeek Harness 里已经有「把活派给子会话」的办法，但都差一
 ### 一键安装（推荐）
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/raosiyu/dsh-whale-middleman/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/silverglowGalike/dsh-whale-middleman/main/install.sh | sh
 ```
 
 装完**完全退出 DSH 再打开**，插件才会加载。
@@ -61,7 +61,7 @@ curl -fsSL https://raw.githubusercontent.com/raosiyu/dsh-whale-middleman/main/in
 ### 从源码
 
 ```sh
-git clone https://github.com/raosiyu/dsh-whale-middleman.git
+git clone https://github.com/silverglowGalike/dsh-whale-middleman.git
 cd dsh-whale-middleman
 npm test          # 189 个用例 + 4 条文档对账，应该全绿
 ```
@@ -349,7 +349,7 @@ npm test    # 189 个用例 + 4 条文档对账
 |---|---|
 | 台账（一个批次一份） | `~/.dsh/middleman/designs/<batchId>.json` |
 | 会话正文 | 各自会话里，台账不存 |
-| 插件源码 | <https://github.com/raosiyu/dsh-whale-middleman> |
+| 插件源码 | <https://github.com/silverglowGalike/dsh-whale-middleman> |
 | 卸载 | `~/.dsh/profiles/desktop/node_modules/dsh-whale-middleman` + `package.json` 的 `dsh.profile.bundles` |
 
 MIT 许可。

@@ -160,7 +160,7 @@ partial / interrupted` 默认 409（`ticket-terminal`），要重跑必须显式
 ### 一键安装（推荐）
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/raosiyu/dsh-whale-middleman/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/silverglowGalike/dsh-whale-middleman/main/install.sh | sh
 ```
 
 脚本做三件事：把包 `pnpm add` 进 profile 的 node_modules、把 bundle 名挂进
@@ -188,7 +188,7 @@ profile 的 `dsh.profile.bundles`、跑一遍测试自检。全自动，不用�
 3. 粘贴仓库地址或本地路径：
 
 ```
-https://github.com/raosiyu/dsh-whale-middleman
+https://github.com/silverglowGalike/dsh-whale-middleman
 ```
 
 4. **完全退出应用，再打开**
@@ -196,7 +196,7 @@ https://github.com/raosiyu/dsh-whale-middleman
 ### 从源码
 
 ```sh
-git clone https://github.com/raosiyu/dsh-whale-middleman.git
+git clone https://github.com/silverglowGalike/dsh-whale-middleman.git
 cd dsh-whale-middleman
 npm test          # 189 个用例 + 4 条文档对账，应该全绿
 ```
