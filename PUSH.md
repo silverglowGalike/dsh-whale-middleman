@@ -15,7 +15,7 @@ owner/dsh-whale-middleman
 
 ```sh
 cd UEGC/tools/gh-release/dsh-whale-middleman
-git remote add origin https://github.com/<你的账号>/dsh-whale-middleman.git
+git remote add origin https://github.com/silverglowGalike/dsh-whale-middleman.git
 git push -u origin main
 ```
 
