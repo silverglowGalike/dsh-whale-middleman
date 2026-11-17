@@ -57,8 +57,8 @@ npm publish --access public    # 包名 dsh-whale-middleman 若已被占用会�
 | 项 | 值 |
 |---|---|
 | 文件 | `dsh-whale-middleman-0.2.0.tgz` |
-| 大小 | 95,311 字节（93.1 KiB） |
-| sha256 | `2065db7c3600a0924574bdf38adbc837ae4e0cc53e492bf5e223c4e4eb6f417a` |
+| 大小 | 95,172 字节（93.1 KiB） |
+| sha256 | `4f8a69123cb5074b01f0a125d20c47b0bbcffe22bce5d43486a31e6d3ce86865` |
 | 包内条目 | 19 个文件（均在 `package/` 下）：11 个 `lib/*.js` + `package.json` + `cordis.patch.yml` + `icon.svg` + `docs/DETAIL.md` + `docs/preview.svg` + `README.md` + `USAGE.md` + `LICENSE` |
 
 安装这个 tgz：
