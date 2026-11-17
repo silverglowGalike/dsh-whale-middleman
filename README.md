@@ -293,4 +293,4 @@ node scripts/visual-harness.mjs <batchId> <ticketId> <outDir>
 
 ## 许可
 
-MIT
+GPL 3.0
