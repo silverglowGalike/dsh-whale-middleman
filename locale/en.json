@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Middleman",
+    "description": "The lead session grills you, converges a design, then splits it into draft tickets and waits for your approval. Approval creates sessions and immediately runs every ready ticket; tickets blocked on predecessors start automatically once those finish done. Each child reports back when it finishes, or stops to ask you when it is unsure. The Middleman sidebar shows batches and tickets, and handles approval, retry-start, and rerun. Previously published as the whale-tail plugin; now simply called Middleman.",
+    "detail": "docs/DETAIL.md"
+  }
+}

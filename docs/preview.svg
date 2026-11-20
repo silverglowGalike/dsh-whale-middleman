@@ -1,47 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
-  <rect width="640" height="300" rx="20" fill="#f3f5f9"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-label="主会话盘问收敛后派发两张挂起的子会话工单，其中一张交回汇报">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#8b95a5"/>
+    </marker>
+    <marker id="arrow-return" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
 
-  <!-- 主会话 / 设计批次 -->
-  <rect x="40" y="64" width="168" height="132" rx="16" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
-  <circle cx="66" cy="92" r="10" fill="#247bbf"/>
-  <rect x="86" y="86" width="96" height="8" rx="4" fill="#d6dde7"/>
-  <rect x="66" y="116" width="110" height="7" rx="3.5" fill="#e0e5ed"/>
-  <rect x="66" y="132" width="86" height="7" rx="3.5" fill="#e0e5ed"/>
-  <rect x="66" y="148" width="64" height="7" rx="3.5" fill="#e0e5ed"/>
-  <rect x="66" y="164" width="92" height="7" rx="3.5" fill="#e0e5ed"/>
+  <!-- 主会话：盘问 -->
+  <rect x="40" y="110" width="120" height="80" rx="12" fill="#8b95a5" fill-opacity="0.10" stroke="#8b95a5" stroke-width="2"/>
+  <path d="M60 134 H132" stroke="#8b95a5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M60 152 H120" stroke="#8b95a5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.55"/>
+  <path d="M60 170 H128" stroke="#8b95a5" stroke-width="4" stroke-linecap="round" stroke-opacity="0.55"/>
 
-  <!-- 设计 -> 人工批准闸门 -->
-  <path d="M208 130h26" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round"/>
-  <path d="M228 123l8 7-8 7" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 派发 -->
+  <path d="M166 150 H204" stroke="#8b95a5" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <!-- 批准闸门：只有人能点 -->
-  <rect x="248" y="98" width="64" height="64" rx="18" fill="#e7edf5" stroke="#b7c3d2" stroke-width="2"/>
-  <path d="M268 130l10 10 18-20" fill="none" stroke="#247bbf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 挂起的工单：暂停条 -->
+  <rect x="212" y="96" width="138" height="108" rx="12" fill="#d97706" fill-opacity="0.10" stroke="#d97706" stroke-width="2.5"/>
+  <rect x="268" y="130" width="10" height="40" rx="3" fill="#d97706"/>
+  <rect x="286" y="130" width="10" height="40" rx="3" fill="#d97706"/>
+  <path d="M232 176 H330" stroke="#d97706" stroke-width="3" stroke-linecap="round" stroke-opacity="0.45"/>
 
-  <!-- 闸门 -> 工单 -->
-  <path d="M312 130h26" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round"/>
-  <path d="M332 123l8 7-8 7" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 两路并行 -->
+  <path d="M356 150 H378 V110 H390" stroke="#8b95a5" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M356 150 H378 V190 H390" stroke="#8b95a5" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
 
-  <!-- 三张工单：挂起 / 等执行 / 跑着 -->
-  <rect x="352" y="64" width="248" height="40" rx="12" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
-  <circle cx="376" cy="84" r="7" fill="#c9d4e0"/>
-  <rect x="392" y="80" width="120" height="7" rx="3.5" fill="#d6dde7"/>
-  <rect x="392" y="91" width="80" height="6" rx="3" fill="#e0e5ed"/>
+  <!-- 子会话 A：跑完 -->
+  <rect x="396" y="80" width="118" height="60" rx="12" fill="#2563eb" fill-opacity="0.10" stroke="#2563eb" stroke-width="2"/>
+  <path d="M414 110 L426 122 L448 94" stroke="#16a34a" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect x="352" y="110" width="248" height="40" rx="12" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
-  <circle cx="376" cy="130" r="7" fill="#247bbf"/>
-  <rect x="392" y="126" width="120" height="7" rx="3.5" fill="#d6dde7"/>
-  <rect x="392" y="137" width="80" height="6" rx="3" fill="#e0e5ed"/>
+  <!-- 子会话 B：还在等你拍板 -->
+  <rect x="396" y="180" width="118" height="60" rx="12" fill="#2563eb" fill-opacity="0.10" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="455" cy="210" r="5" fill="#d97706"/>
+  <circle cx="472" cy="210" r="5" fill="#d97706" fill-opacity="0.45"/>
+  <circle cx="489" cy="210" r="5" fill="#d97706" fill-opacity="0.20"/>
 
-  <rect x="352" y="156" width="248" height="40" rx="12" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
-  <circle cx="376" cy="176" r="7" fill="#d9a12b"/>
-  <rect x="392" y="172" width="120" height="7" rx="3.5" fill="#d6dde7"/>
-  <rect x="392" y="183" width="80" height="6" rx="3" fill="#e0e5ed"/>
-
-  <!-- 结果信封：子会话 turn/end 回传到主会话 -->
-  <path d="M476 196v52H152v-44" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
-  <path d="M145 202l7-8 7 8" fill="none" stroke="#7b8b9f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="304" y="228" width="72" height="44" rx="10" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
-  <path d="M310 234l30 22 30-22" fill="none" stroke="#247bbf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 汇报回流 -->
+  <path d="M455 246 V268 H100 V200" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-dasharray="7 6" marker-end="url(#arrow-return)"/>
 </svg>
